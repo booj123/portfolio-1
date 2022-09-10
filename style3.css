@@ -12,7 +12,17 @@
 body {
   background-image: url(bg.png);
   min-height: 600px;
+  animation-name: change-bg;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+@keyframes change-bg {
+  from {background-image: url(bg.png);}
+  to {background-image: url(B.png);}
+  }
+  
 .navbar img {
   position: relative;
   width: 7%;
