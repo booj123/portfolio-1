@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  border-color: transparent;
+}
+
+body {
+  background-image: url(bg.png);
+  min-height: 600px;
+}
+.navbar img {
+  position: relative;
+  width: 7%;
+  top: 0;
+  margin-left: 1310px;
+  z-index: 1000;
+  display: flex;
+  padding: 10px;
+}
+
+
+
+.clanding h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #bb6765;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 100px;
+  margin-top: 100px;
+  margin-left: 180px;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .links {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+  }
+  .clanding h1{
+    text-align: center;
+    margin: auto;
+  }
+
+}
+
+
+.btne button {
+  font-size: 80px;
+  cursor: pointer;
+
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.btne a {
+
+  color: #273b3a;
+}
+
+
+
+.btnl button {
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 80px;
+  cursor: pointer;
+  color: #273b3a;
+  width: 150px;
+  height: 150px;
+}
+
+.btnr button {
+  border-radius: 50%;
+  font-size: 80px;
+  cursor: pointer;
+  color: #273b3a;
+  width: 150px;
+  height: 150px;
+}
+
