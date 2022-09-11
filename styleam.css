@@ -19,13 +19,8 @@ body {
 }
 .navbar img {
   position: relative;
-  width: 7%;
-  top: 0;
-  
-  z-index: 1000;
-  display: flex;
+  width: 100px;
   padding: 10px;
- 
 }
 
 
@@ -36,7 +31,7 @@ to {background-image: url(B.png);}
 }
 
 .text{
-  width: 1000px;
+ width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,6 +43,7 @@ to {background-image: url(B.png);}
   text-align: center;
   color: #bb6765;
   margin-bottom: 40px;
+
 }
 
 
@@ -58,5 +54,30 @@ to {background-image: url(B.png);}
   text-align: left;
   color: #fadad8;
   margin-top: 20px;
+  line-height: 30px;
+  background-color: #bb6765;
+  
 
 }
+
+@media only screen and (max-width: 600px) {
+
+  .text{
+    text-align: center;
+    height: 100%;
+  }
+
+  .text p{
+    font-size: 20px;
+  }
+
+  .text h1{
+    font-size: 28px;
+  }
+
+  .navbar img{
+    width: 80px;
+  }
+  
+}
+
