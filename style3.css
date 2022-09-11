@@ -23,16 +23,11 @@ body {
   to {background-image: url(B.png);}
   }
   
-.navbar img {
-  position: relative;
-  width: 7%;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  padding: 10px;
-}
-
-
+  .navbar img {
+    position: relative;
+    width: 80px;
+    padding: 10px;
+  }
 
 .clanding h1 {
   font-family: sans-serif;
@@ -52,39 +47,18 @@ body {
 
 }
 
-@media only screen and (max-width: 700px) {
-  .links {
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    text-align: center;
-    margin-top: 80px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 100%;
-  }
-  .clanding h1{
-    text-align: center;
-    margin: auto;
-  }
-
-}
-
 
 .btne button {
   font-size: 80px;
   cursor: pointer;
-
   border-radius: 50%;
   width: 150px;
   height: 150px;
 }
 
 .btne a {
-
   color: #273b3a;
 }
-
-
 
 .btnl button {
   padding: 15px;
@@ -105,3 +79,60 @@ body {
   height: 150px;
 }
 
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  font-family: sans-serif;
+  visibility: hidden;
+  width: 120px;
+  background-color: #bb666598 ;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 24px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  bottom: 140px;
+  left: 12px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .links {
+    grid-template-columns: auto auto;
+    grid-gap: 20px; 
+  }
+
+  .clanding h1{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+  }
+  .navbar img{
+    width: 15%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .links {
+    grid-template-columns: auto;
+    grid-gap: 25px; 
+  }
+
+  .clanding h1{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+  }
+  .navbar img{
+    width: 15%;
+  }
+}
